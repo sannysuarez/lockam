@@ -53,3 +53,27 @@ lockam/
 ├── LICENSE                
 ├── CONTRIBUTING.md        
 └── README.md
+```
+
+## 📄 `LICENSE`
+
+Lockam – All Rights Reserved
+
+Copyright (c) 2025 Muhammad Sanni
+
+This software is provided for PERSONAL and NON-COMMERCIAL USE only.
+
+You are NOT allowed to:
+- Copy, modify, merge, publish, distribute, sublicense, and/or sell copies of this Software
+- Use this Software as part of another project without explicit written consent
+- Create derivative or commercial works from this Software
+
+You are allowed to:
+- View and study the source code
+- Use it personally on your own computer
+- Contribute to this repository through Pull Requests
+
+Contributors grant the project owner (Muhammad Sanni) the right to use, modify, and distribute their code as part of this project only.
+
+For permissions, contact: [sannysuarez4@gmail.com]
+
