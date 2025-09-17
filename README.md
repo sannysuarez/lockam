@@ -55,7 +55,7 @@ lockam/
 └── README.md
 ```
 
-## 📄 `LICENSE`
+## 📄 `LICENSE & USAGE`
 
 Lockam – All Rights Reserved
 
