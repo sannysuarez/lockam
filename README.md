@@ -12,9 +12,7 @@ It runs silently in the background and instantly **locks your screen** when susp
 - 🔐 **Auto-Lock** – immediately lock the system when intruders are detected  
 - 📷 **Webcam Integration** – capture intruder images in real time  
 - 📝 **Intrusion Logs** – record every unauthorized attempt (with timestamps & details)  
-- ⚙️ **Configurable Settings** – enable/disable auto-lock, webcam monitoring, etc.  
 - 🛠 **Cross-Platform** – works on **Windows, Linux, and macOS**  
-- 🏗 **App Factory Pattern** – modular structure, easy to extend  
 
 ---
 
