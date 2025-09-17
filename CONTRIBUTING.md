@@ -24,18 +24,28 @@ We love your interest in contributing to **Lockam**, but there are rules to prot
 
 ✅ Allowed:
 
-Fixing bugs
+-Fixing bugs
 
-Adding new features (with discussion)
+-Adding new features (with discussion)
 
-Improving documentation
+-Improving documentation
 
 ❌ Not Allowed without Permission:
 
-Reusing Lockam code in other projects
+-Reusing Lockam code in other projects
 
-Copying parts of Lockam for commercial or personal products
+-Copying parts of Lockam for commercial or personal products
 
-Redistributing or reselling this software
+-Redistributing or reselling this software
 
 All contributions are reviewed by the project owner before merging
+
+## Legal Notice
+
+By contributing to this repository, you agree that your contributions:
+
+-May be modified by the project owner
+
+-Will remain within this project’s ecosystem
+
+-Cannot be reused elsewhere without consent
