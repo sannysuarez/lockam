@@ -49,3 +49,19 @@ By contributing to this repository, you agree that your contributions:
 - Will remain within this project’s ecosystem
 
 - Cannot be reused elsewhere without consent
+## Coding Style
+
+To keep the project clean and consistent:
+
+- **Formatting:** Use [Black](https://black.readthedocs.io) (autoformatter).  
+- **Linting:** Run `flake8` and `pylint` before pushing code.  
+- **Imports:** Organize imports (VSCode does this automatically).  
+- **Testing:** Add or update tests when you add new features.  
+
+> Run this before committing:  
+> ```bash
+> black .
+> flake8
+> pylint lockam
+> pytest
+> ```
