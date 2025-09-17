@@ -1,0 +1,48 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+*.egg
+*.so
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Byte-compiled
+*.pyc
+
+# Logs
+*.log
+
+# ---- SQLite DB ----
+lockam/storage/lockam.db
+
+# ---- OS files ----
+.DS_Store
+Thumbs.db
+
+# ---- VSCode ----
+.vscode/
+.history/
+*.code-workspace
+
+# ---- Testing/coverage ----
+.coverage
+.pytest_cache/
+htmlcov/
+.cache/
+
+# ---- Build/dist ----
+build/
+dist/
+*.spec
+*.bak
+
+# ---- Misc ----
+*.swp
+*.swo
