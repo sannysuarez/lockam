@@ -1,8 +1,3 @@
-
-
-## 📄 `CONTRIBUTING.md`
-
-```markdown
 # 🤝 Contributing to Lockam
 
 We love your interest in contributing to **Lockam**, but there are rules to protect the project.
