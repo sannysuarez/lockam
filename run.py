@@ -1,9 +1,10 @@
 # Lockam - PC Intrusion Detection & Auto-Lock Software
-# lockam/run.py - Entry point for Lockam demo/testing
+# run.py - Entry point for Lockam demo/testing
 # Copyright (c) 2025 Muhammad Sanni
 # All rights reserved. See LICENSE for details.
 
 from lockam import create_app
+from gui import setup_wizard
 
 def main():
     app = create_app()
@@ -26,6 +27,9 @@ def main():
 
     print("\n[4] Authenticate with wrong password:")
     print("Result:", um.authenticate("admin", "wrongpass"))
+
+    # Run GUI Setup Wizard
+    setup_wizard.run_setup_wizard(app["user_manager"])
 
 
 if __name__ == "__main__":
