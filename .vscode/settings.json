@@ -13,7 +13,7 @@
 
     // Import sorting
     "editor.codeActionsOnSave": {
-        "source.organizeImports": true
+        "source.organizeImports": "explicit"
     },
 
     // Testing
