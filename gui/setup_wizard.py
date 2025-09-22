@@ -1,7 +1,6 @@
 # Lockam - PC Intrusion Detection & Auto-Lock Software
 # lockam/gui/setup_wizard.py
-# Lockam - Setup Wizard (PyQt5)
-# Lockam - Setup Wizard GUI
+# Lockam - Setup Wizard GUI (PyQt5)
 # Copyright (c) 2025 Muhammad Sanni
 # All rights reserved. See LICENSE for details.
 

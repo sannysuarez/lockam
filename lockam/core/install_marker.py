@@ -1,6 +1,5 @@
 # Lockam - PC Intrusion Detection & Auto-Lock Software
 # lockam/core/install_marker.py
-# Utility functions for Lockam
 # Copyright (c) 2025 Muhammad Sanni
 # All rights reserved. See LICENSE for details.
 
