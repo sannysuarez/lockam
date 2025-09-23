@@ -9,9 +9,9 @@
 # On next runs - app skips wizard and goes to main window.
 '''
 
-from pathlib import pathlib
+from pathlib import Path
 
-INSTALL_MARKER = path("lockam/storage/.installed")
+INSTALL_MARKER = Path("lockam/storage/.installed")
 
 def is_fresh_install():
     return not INSTALL_MARKER.exists()

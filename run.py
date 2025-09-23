@@ -5,6 +5,7 @@
 
 from lockam import create_app
 from gui import setup_wizard
+from lockam.core.install_marker import is_fresh_install
 
 def main():
     app = create_app()
@@ -14,22 +15,12 @@ def main():
     print(f"Using database at: {app['db_path']}\n")
 
 
-    # --- DEMO USAGE ---
-    print("\n[1] Adding user 'admin' with password 'secret123'")
-    created = um.add_user("admin", "secret123")
-    print("User created:", created)
-
-    print("\n[2] Current users:")
-    print(um.list_users())
-
-    print("\n[3] Authenticate with correct password:")
-    print("Result:", um.authenticate("admin", "secret123"))
-
-    print("\n[4] Authenticate with wrong password:")
-    print("Result:", um.authenticate("admin", "wrongpass"))
-
-    # Run GUI Setup Wizard
-    setup_wizard.run_setup_wizard(app["user_manager"])
+    # Only show Setup Wizard if fresh install
+    if is_fresh_install():
+        setup_wizard.run_setup_wizard(um)
+    else:
+        print("Lockam is already installed. Launching main app...")
+        # TODO: Replace this with main dashboard/lock screen later
 
 
 if __name__ == "__main__":

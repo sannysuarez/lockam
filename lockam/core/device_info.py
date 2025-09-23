@@ -17,7 +17,7 @@ def get_device_info():
     """ Collect basic device infor for server registration. """
     try:
         info = {
-            "nostname": socket.gethostanme();
+            "nostname": socket.gethostanme(),
             "ip_address": socket.gethostbyname(socket.gethostname()),
             "os": platform.system(),
             "os_version": platform.version(),
