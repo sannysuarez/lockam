@@ -1,5 +1,5 @@
 # Lockam - PC Intrusion Detection & Auto-Lock Software
-# lockam/gui/device_info.py
+# lockam/core/device_info.py
 # Lockam - Device Information as per install
 # Copyright (c) 2025 Muhammad Sanni
 # All rights reserved. See LICENSE for details.
