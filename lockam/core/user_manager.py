@@ -8,7 +8,7 @@ import sqlite3
 from pathlib import Path
 import json
 import platform
-from datetime import datetime
+from datetime import datetime, timezone
 from . import utils
 
 
@@ -48,7 +48,7 @@ class UserManager:
         cursor.execute("DELETE FROM local_user")
         cursor.execute(
             "INSERT INTO local_user (username, salt, password_hash, created_at) VALUES (?, ?, ?, ?)",
-            (username, salt, pwd_hash, datetime.utcnow().isoformat()),
+            (username, salt, pwd_hash, datetime.now(timezone.utc).isoformat()),
         )
         conn.commit()
         conn.close()
