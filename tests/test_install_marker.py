@@ -1,4 +1,8 @@
+# Lockam - Unit Tests for install_marker.p
 # tests/test_install_marker.py
+# Copyright (c) 2025 Muhammad Sanni
+# All rights reserved. See LICENSE for details.
+
 import os
 from pathlib import Path
 import lockam.core.install_marker as marker
