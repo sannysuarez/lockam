@@ -4,6 +4,9 @@
 # Copyright (c) 2025 Muhammad Sanni
 # All rights reserved. See LICENSE for details.
 
+# import centralized validators
+from lockam.core.validators import validate_inputs
+
 from PyQt5.QtWidgets import (
     QApplication, QWizard, QWizardPage, QLabel, QLineEdit,
     QDateEdit, QComboBox, QPushButton, QVBoxLayout, QMessageBox
@@ -139,22 +142,24 @@ class SetupWizard(QWizard):
 
     def finalize_setup(self):
         """ Validate, save user locally, send to server, mark installation complete. """
-
-        # --- VALIDATION ---
-        if not self.fullname.text().strip():
-            QMessageBox.warning(self, "Validation Error", "Full name is required.")
+        # CENTRAL VALIDATION
+        valid, message = validate_inputs(
+            self.fullname.text(),
+            self.email.text(),
+            self.username.text(),
+            self.password.text()
+        )
+        if not valid:
+            QMessageBox.warning(self, "Validation Error", message)
             return
+
+
+        # --- Ensure country and gender are selected ---
         if self.country.currentIndex() == 0:
             QMessageBox.warning(self, "Validation Error", "Please select a country.")
             return
         if self.gender.currentIndex() == 0:
             QMessageBox.warning(self, "Validation Error", "Please select a gender.")
-            return
-        if not self.username.text().strip():
-            QMessageBox.warning(self, "Validation Error", "Username is required.")
-            return
-        if not self.password.text().strip():
-            QMessageBox.warning(self, "Validation Error", "Password is required.")
             return
 
         try:

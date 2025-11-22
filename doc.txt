@@ -1,0 +1,4 @@
+1. install_marker.py - Detects first install
+2. user_manager.py - local credentials storage + export
+3. utils.py - hashing, verification, helpers
+4. setup_wizard.py - GUI for first-time setup
