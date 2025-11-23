@@ -44,7 +44,7 @@ def validate_username(username: str):
 
     # FIXED: removed space in {3,32}
     if not re.match(r"^[A-Za-z0-9_.-]{3,32}$", username):
-        return False, "Username must be 3-32 characters (letters, numbers, _, ., -)."
+        return False, "Invalid username format"
 
     return True, ""
 

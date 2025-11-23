@@ -144,10 +144,11 @@ class SetupWizard(QWizard):
         """ Validate, save user locally, send to server, mark installation complete. """
         # CENTRAL VALIDATION
         valid, message = validate_inputs(
-            self.fullname.text(),
-            self.email.text(),
-            self.username.text(),
-            self.password.text()
+            fullname = self.fullname.text(),
+            email = self.email.text(),
+            username = self.username.text(),
+            password = self.password.text(),
+            dob = self.dob.date().toPyDate()
         )
         if not valid:
             QMessageBox.warning(self, "Validation Error", message)
