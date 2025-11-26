@@ -76,7 +76,7 @@ class SetupWizard(QWizard):
 
         layout.addWidget(QLabel("Full Name:"))
         layout.addWidget(self.fullname)
-        layout.addWidget(QLabel("Date of Birth (yyyy-mm-dd):"))
+        layout.addWidget(QLabel("Date of Birth (mm-dd-yyyy):"))
         layout.addWidget(self.dob)
         layout.addWidget(QLabel("Country:"))
         layout.addWidget(self.country)
@@ -133,7 +133,12 @@ class SetupWizard(QWizard):
                                 "- See consent details: https://lockam.sanni.com.ng/consent"
                                 ))
 
-        finish_btn = QPushButton("Finish & Submit")
+        finish_btn = QPushButton("Finish && Submit")
+        font = finish_btn.font()
+        font.setBold(True)
+        font.setPointSize(15)
+        finish_btn.setFont(font)
+
         finish_btn.clicked.connect(self.finalize_setup)
         layout.addWidget(finish_btn)
 
@@ -165,7 +170,7 @@ class SetupWizard(QWizard):
 
         try:
             # 1. Save minimal info locally (username, password, face)
-            self.user_manager.add_user(self.username.text().strip(), self.password.text().strip())
+            self.user_manager.save_user(self.username.text(), self.password.text())
 
             # 2. Send extended info to server
             payload = {
